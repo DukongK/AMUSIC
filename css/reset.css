@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+/* 전체적용 */
+body {
+  background-color: #000;
+  font-family: "Inter", sans-serif;
+}
+
+/* body,
+html {width:100%;
+    overflow-x: hidden;
+} */
