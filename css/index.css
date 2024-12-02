@@ -398,6 +398,9 @@
   }
 
   /* con5 */
+  .con5 {
+    overflow: hidden;
+  }
 
   .con5 ul {
     margin: 200px;
@@ -429,5 +432,91 @@
     padding: 30px;
   }
 
+  /* con6 */
+  .con6 {
+    height: 500px;
+  }
+
+  .con6 h2 {
+    color: #fff;
+    font-size: 150px;
+    text-align: center;
+  }
+  .txt_wrap {
+    position: relative;
+  }
+  /* 글자 반 나누기 움직임 */
+  /* txt1,txt2 를 움직임줘야함 */
+  .txt1 {
+    /* background-color: #999; */
+    position: relative;
+    height: 100px;
+  }
+  .txt1 h2 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -0%);
+    background-image: linear-gradient(to bottom, #ff426b, #b75fff);
+    background-clip: text;
+    color: transparent;
+  }
+
+  .txt2 {
+    /* background-color: salmon; */
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+  }
+  .txt2 h2 {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translate(-50%, 0%);
+    background-image: linear-gradient(to bottom, #ff426b, #b75fff);
+    background-clip: text;
+    color: transparent;
+  }
+
+  .txt3 {
+    position: absolute;
+    left: 50%;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0; */
+  }
+  .txt3 h2 {
+    background-image: linear-gradient(to bottom, #ff426b, #b75fff);
+    background-clip: text;
+    color: transparent;
+  }
+
   /* footer */
+
+  footer {
+    text-align: center;
+  }
+
+  footer > img {
+    width: 100px;
+    padding-bottom: 20px;
+  }
+
+  .footer_txt {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+  }
+  .footer_txt li h2 {
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .snsicon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+  }
 }
