@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            h2 {
+                font-size: 50px;
+            }
+            .box1 {
+                overflow: hidden;
+                /* background-color: seagreen; */
+                position: relative;
+                height: 70px;
+            }
+
+            .box1 h2 {
+                position: absolute;
+                left: 0px;
+                top: 35px;
+                transition: 1s;
+            }
+
+            .box1 h2.on {
+                transform: translateX(200px);
+            }
+
+            .box2 {
+                /* background-color: salmon; */
+                position: relative;
+                overflow: hidden;
+                height: 70px;
+                transition: 1s;
+                transition-delay: 1s;
+            }
+            .box2.on {
+                transform: translateY(150px);
+            }
+            .box2 h2 {
+                position: absolute;
+                left: 0px;
+                top: -35px;
+                transition: 1s;
+            }
+            .box2 h2.on {
+                transform: translateX(400px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"><h2>테스트</h2></div>
+        <div class="box2"><h2>테스트</h2></div>
+    </body>
+    <script>
+        $(function () {
+            $(".box1 h2").addClass("on");
+            $(".box2 h2").addClass("on");
+
+            $(".box2").addClass("on");
+        });
+    </script>
+</html>
