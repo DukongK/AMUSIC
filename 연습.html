@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* .loader_inner {
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+      }
+      .loader span {
+        background: url(img/business/wave_s.svg);
+        background-size: 100%;
+        background-repeat: repeat-x;
+        background-position: -500px 0;
+        width: 100%;
+        height: 100px;
+        display: inline-block;
+        animation: waveLine 2s linear infinite;
+      }
+      @keyframes waveLine {
+        0% {
+          background-position: 150% 0;
+        }
+      } */
+
+      .loader_inner {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+        position: relative;
+
+        /* overflow: hidden; */
+      }
+      .loader .line1 {
+        background: url(img/business/wave_s.svg);
+        background-size: 100%;
+        background-repeat: repeat-x;
+        background-position: -100vw 0;
+        width: 100%;
+        height: 285px;
+        display: inline-block;
+        animation: waveLine1 3s linear 0s infinite;
+      }
+
+      @keyframes waveLine1 {
+        0% {
+          background-position: 0 0;
+        }
+      }
+
+      .loader .line2 {
+        background: url(img/business/wave_s_2.svg);
+        background-size: 100%;
+        background-repeat: repeat-x;
+        background-position: -100vw 0;
+        width: 100%;
+        height: 285px;
+        display: inline-block;
+        animation: waveLine2 5s linear 0s infinite;
+
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      @keyframes waveLine2 {
+        0% {
+          background-position: 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader_inner">
+        <span class="line1"></span>
+        <span class="line2"></span>
+      </div>
+    </div>
+  </body>
+</html>
