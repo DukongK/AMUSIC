@@ -26,7 +26,18 @@ $(function () {
     // console.log(button);
     $("html,body").stop().animate({ scrollTop: button });
   });
+
+// hamlist
+
+$(".hambergur").on("click",function(){
+  $(".hamlist").fadeToggle();
+  $(".ham_list_ul li").toggleClass("on");
+})
+
 });
+
+
+
 
 // 페이지별 공통 적용------------------------------
 
