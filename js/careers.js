@@ -29,10 +29,10 @@ $(function () {
 
   // hamlist
 
-$(".hambergur").on("click",function(){
-  $(".hamlist").fadeToggle();
-  $(".ham_list_ul li").toggleClass("on");
-})
+  $(".hambergur").on("click", function () {
+    $(".hamlist").fadeToggle();
+    $(".ham_list_ul li").toggleClass("on");
+  });
 });
 
 // 페이지별 공통 적용------------------------------
@@ -61,6 +61,7 @@ $(function () {
       $(".con1 h2 ").addClass("on");
       $(".cog ").addClass("on");
     }
+
     if (con2 >= 1360 && 1450 <= con2) {
       $(".con2 ul:first-child li h2:last-child").addClass("on");
       $(".con2 ul:first-child li h2:first-child").addClass("on");
