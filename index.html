@@ -1,326 +1,333 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, 
-    maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <title>AMUSIC</title>
-    <!-- 컬러 -->
-    <!-- 배경 #000000 -->
-    <!-- 보라색계열 #B75FFF -->
-    <!-- 분홍색계열 #FF426B -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AMUSIC</title>
+        <!-- 컬러 -->
+        <!-- 배경 #000000 -->
+        <!-- 보라색계열 #B75FFF -->
+        <!-- 분홍색계열 #FF426B -->
 
-    <!-- css연결 -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="icon" href="./img/main/icona.ico" />
+        <!-- css연결 -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
 
-    <!-- 제이쿼리 -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/index.js"></script>
+        <!-- 제이쿼리 -->
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/index.js"></script>
 
-    <!-- 한글폰트 -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Prata&family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
+        <!-- 한글폰트 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Prata&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- 영문폰트 -->
-    <!-- font-family: "Inter", sans-serif; -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Prata&family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
+        <!-- 영문폰트 -->
+        <!-- font-family: "Inter", sans-serif; -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Prata&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- gsap -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  </head>
-  <body>
-    <!-- header 공통 -->
-    <header>
-      <nav>
-        <!-- 로고 -->
-        <!-- 로고 사이즈
+        <!-- gsap -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+        <!-- header 공통 -->
+        <header>
+            <nav>
+                <!-- 로고 -->
+                <!-- 로고 사이즈
                   pc : 70px
                   태블릿 : 60px
                   모바일 : 50px -->
-        <h1>
-          <a href="index.html">
-            <img src="img/main/logo_amusic.svg" alt="logo" />
-          </a>
-        </h1>
-        <!-- 메뉴 -->
-        <ul class="menu">
-          <li>
-            <a href="brand.html">BRAND</a>
-          </li>
-          <li><a href="notice.html">NOTICE</a></li>
-          <li><a href="produce.html">PRODUCE</a></li>
-          <li><a href="business.html">BUSINESS</a></li>
-          <li><a href="careers.html">CAREERS</a></li>
-        </ul>
-        <!-- 햄버거바 -->
-        <ul class="hambergur">
-          <li></li>
-          <li></li>
-        </ul>
-        <!-- 햄버거 클릭 시 메뉴판 -->
-        <div class="hamlist">
-          <ul class="ham_list_ul">
-            <li>
-              <a href="brand.html">BRAND</a>
+                <h1>
+                    <a href="index.html">
+                        <img src="img/main/logo_amusic.svg" alt="logo" />
+                    </a>
+                </h1>
+                <!-- 메뉴 -->
+                <ul class="menu">
+                    <li>
+                        <a href="brand.html">BRAND</a>
+                    </li>
+                    <li><a href="notice.html">NOTICE</a></li>
+                    <li><a href="produce.html">PRODUCE</a></li>
+                    <li><a href="business.html">BUSINESS</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
+                </ul>
+                <!-- 햄버거바 -->
+                <ul class="hambergur">
+                    <li></li>
+                    <li></li>
+                </ul>
+             <!-- 햄버거 클릭 시 메뉴판 -->
+             <div class="hamlist">
+            <ul class="ham_list_ul">
+              <li>
+                <a href="brand.html">BRAND</a>
             </li>
             <li><a href="notice.html">NOTICE</a></li>
             <li><a href="produce.html">PRODUCE</a></li>
             <li><a href="business.html">BUSINESS</a></li>
             <li><a href="careers.html">CAREERS</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- 여기까지 header 공통 -->
-    <!-- visual -->
-    <div id="visual">
-      <div class="video_wrap">
-        <video
-          src="video/index/visual_video.mp4"
-          alt="video"
-          autoplay
-          loop
-          muted
-          playsinline
-        ></video>
+            </ul>
+          </div>   
+            </nav>
+            
+        </header>
+        <!-- 여기까지 header 공통 -->
+        <!-- visual -->
+        <div id="visual">
+            <div class="video_wrap">
+                <video
+                    src="video/index/visual_video.mp4"
+                    alt="video"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                ></video>
 
-        <div class="video_opa"></div>
+                <div class="video_opa"></div>
 
-        <div class="v_txt">
-          <ul>
-            <li><p class="left_txt">VISIBLE</p></li>
-            <li class="center_txt">
-              <h2 class="top_txt">MUSIC</h2>
-              <img src="img/main/logo_amusic.svg" alt="logo" />
-              <h2 class="zin2">VARIOUS</h2>
-            </li>
-            <li class="center_line">
-              <p class="right_txt">Scroll Down</p>
-              <img src="img/main/scroll_down.png" alt="scrolldown" />
-            </li>
-          </ul>
-        </div>
-        <div class="banner">
-          <p>카카오톡으로 편리하게 다양한 이벤트 소식을 알려드립니다</p>
-          <img src="img/main/kakaoch_icon.png" alt="kakaochannel" />
-        </div>
-      </div>
-    </div>
-
-    <!-- container -->
-    <div id="container">
-      <!-- con1 -->
-      <section class="con1">
-        <div class="con1_bg">
-          <ul class="con1_ul">
-            <li>
-              <h2>CYNICAL&nbsp&nbsp<span>CYNICAL</span></h2>
-            </li>
-            <li>
-              <div class="img_txt">
-                <h2>FEELING</h2>
-                <h2>SOUND</h2>
-              </div>
-            </li>
-            <li>
-              <h2>POWERFUL&nbsp&nbsp<span>POWERFUL</span></h2>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- con2 -->
-      <section class="con2">
-        <div class="ring_left">
-          <div class="ring">
-            <img src="img/ring/e4.png" alt="ring" />
-          </div>
-          <div class="ring">
-            <img src="img/ring/e3.png" alt="ring" />
-          </div>
-          <div class="ring">
-            <img src="img/ring/e2.png" alt="ring" />
-          </div>
-          <div class="ring">
-            <img src="img/ring/e1.png" alt="ring" />
-          </div>
-        </div>
-
-        <ul class="c2_center">
-          <li>
-            <h2 class="cof">음악과 함께하는<br />일상</h2>
-          </li>
-          <li><img src="img/index/con2.png" alt="dance" /></li>
-          <li><h2 class="cog">새로운 도전</h2></li>
-        </ul>
-
-        <div class="ring_right">
-          <div class="ring2">
-            <img src="img/ring/e4.png" alt="ring2" />
-          </div>
-          <div class="ring2">
-            <img src="img/ring/e3.png" alt="ring2" />
-          </div>
-          <div class="ring2">
-            <img src="img/ring/e2.png" alt="ring2" />
-          </div>
-          <div class="ring2">
-            <img src="img/ring/e1.png" alt="ring2" />
-          </div>
-        </div>
-      </section>
-      <!-- con3 -->
-      <section class="con3">
-        <div class="line1">
-          <p>Without music, Life would be a mistake.</p>
-          <p>
-            <strong>음악이 없다면,인생 자체가 실수일 것이다</strong>
-          </p>
-          <p>Without music, Life would be a mistake.</p>
-          <p>
-            <strong>음악이 없다면,인생 자체가 실수일 것이다</strong>
-          </p>
-          <p>Without music, Life would be a mistake.</p>
-        </div>
-        <div class="line2">
-          <p>
-            A painter paints pictures on canvas. But musicians paint their
-            pictures on silence.
-          </p>
-          <p>
-            A painter paints pictures on canvas. But musicians paint their
-            pictures on silence.
-          </p>
-        </div>
-      </section>
-      <!-- con4 -->
-      <section class="con4">
-        <div class="c4_txt">
-          <h2>다양한 장르의 음악들</h2>
-          <h2>새로운 경험을 해보세요.</h2>
-        </div>
-
-        <ul class="img_slide">
-          <!-- <li><img src="img/index/con3_1.png" /></li> -->
-          <li>
-            <video
-              src="video/con4_1.mp4"
-              alt="video"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-          </li>
-          <li class="c4_logo">
-            <img class="c4_logo_img" src="img/main/logo_amusic.svg" />
-            <img class="circle_img" src="img/main/circle_txt.png" />
-          </li>
-          <!-- <li><img src="img/index/con3_2.png" /></li> -->
-          <li>
-            <video
-              src="video/con4_3.mp4"
-              alt="video"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-          </li>
-          <li><img src="img/index/con3_3.png" /></li>
-          <li><img src="img/index/con3_4.png" /></li>
-        </ul>
-      </section>
-      <!-- con5 -->
-      <section class="con5">
-        <ul>
-          <li>
-            <p class="c5_p1">
-              Music is the<br />
-              universal Language
-            </p>
-          </li>
-          <li>
-            <img src="img/index/con5.png" />
-            <div class="c5_txt">
-              <h2>billboard</h2>
-              <p class="p2">Music Awards</p>
-              <p class="p3">Los Angeles</p>
+                <div class="v_txt">
+                    <ul>
+                        <li><p class="left_txt">VISIBLE</p></li>
+                        <li class="center_txt">
+                            <h2 class="top_txt">MUSIC</h2>
+                            <img src="img/main/logo_amusic.svg" alt="logo" />
+                            <h2 class="zin2">VARIOUS</h2>
+                        </li>
+                        <li class="center_line">
+                            <p class="right_txt">Scroll Down</p>
+                            <img
+                                src="img/main/scroll_down.png"
+                                alt="scrolldown"
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <p>
+                        카카오톡으로 편리하게 다양한 이벤트 소식을 알려드립니다
+                    </p>
+                    <img src="img/main/kakaoch_icon.png" alt="kakaochannel" />
+                </div>
             </div>
-          </li>
-        </ul>
-      </section>
-      <section class="con6">
-        <div class="txt1">
-          <h2>MUSIC</h2>
         </div>
-        <div class="txt2">
-          <h2>MUSIC</h2>
-        </div>
-        <div class="txt3">
-          <h2>LANGUAGE</h2>
-        </div>
-      </section>
-    </div>
 
-    <!-- footer 공통 -->
-    <footer>
-      <img src="img/main/logo_amusic.svg" alt="logo" />
-      <ul class="footer_txt">
-        <li>
-          <h2>YOUR</h2>
-        </li>
-        <li><h2>MUSIC</h2></li>
-      </ul>
-      <!-- snsicon -->
-      <ul class="snsicon">
-        <li>
-          <a href="#"
-            ><img src="img/main/kakako_icon.png" alt="kakao_icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="img/main/youtube_icon.png" alt="youtube_icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/main/insta_icon.png" alt="insta_icon" /></a>
-        </li>
-      </ul>
-      <!-- scrollUp -->
-      <div class="scrollUp">
-        <p>Scroll Up</p>
-        <img src="img/main/scroll_up.png" />
-      </div>
-    </footer>
-    <!-- gsap -->
-    <script>
-      $(function () {
-        let img = gsap.utils.toArray(".con4 .img_slide li");
-        gsap.to(img, {
-          xPercent: -100 * (img.length - 1),
-          scrollTrigger: {
-            trigger: ".con4",
-            pin: true,
-            scrub: 5,
-            start: "center center",
-            end: "200%",
-            // markers: true,
-          },
-        });
-      });
-    </script>
-  </body>
+        <!-- container -->
+        <div id="container">
+            <!-- con1 -->
+            <section class="con1">
+                <div class="con1_bg">
+                    <ul class="con1_ul">
+                        <li>
+                            <h2>CYNICAL&nbsp&nbsp<span>CYNICAL</span></h2>
+                        </li>
+                        <li>
+                            <div class="img_txt">
+                                <h2>FEELING</h2>
+                                <h2>SOUND</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>POWERFUL&nbsp&nbsp<span>POWERFUL</span></h2>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- con2 -->
+            <section class="con2">
+                <div class="ring_left">
+                    <div class="ring">
+                        <img src="img/ring/e4.png" alt="ring" />
+                    </div>
+                    <div class="ring">
+                        <img src="img/ring/e3.png" alt="ring" />
+                    </div>
+                    <div class="ring">
+                        <img src="img/ring/e2.png" alt="ring" />
+                    </div>
+                    <div class="ring">
+                        <img src="img/ring/e1.png" alt="ring" />
+                    </div>
+                </div>
+
+                <ul class="c2_center">
+                    <li>
+                        <h2 class="cof"><em>음악과 함께하는<br />일상</em></h2>
+                    </li>
+                    <li><img src="img/index/con2.png" alt="danceimg" /></li>
+                    <li><h2 class="cog"><em>새로운 도전</em></h2></li>
+                </ul>
+
+                <div class="ring_right">
+                    <div class="ring2">
+                        <img src="img/ring/e4.png" alt="ring2" />
+                    </div>
+                    <div class="ring2">
+                        <img src="img/ring/e3.png" alt="ring2" />
+                    </div>
+                    <div class="ring2">
+                        <img src="img/ring/e2.png" alt="ring2" />
+                    </div>
+                    <div class="ring2">
+                        <img src="img/ring/e1.png" alt="ring2" />
+                    </div>
+                </div>
+            </section>
+            <!-- con3 -->
+            <section class="con3">
+                <div class="line1">
+                    <p>Without music, Life would be a mistake.</p>
+                    <p>
+                        <strong>음악이 없다면,인생 자체가 실수일 것이다</strong>
+                    </p>
+                    <p>Without music, Life would be a mistake.</p>
+                    <p>
+                        <strong>음악이 없다면,인생 자체가 실수일 것이다</strong>
+                    </p>
+                    <p>Without music, Life would be a mistake.</p>
+                </div>
+                <div class="line2">
+                    <p>
+                        A painter paints pictures on canvas. But musicians paint
+                        their pictures on silence.
+                    </p>
+                    <p>
+                        A painter paints pictures on canvas. But musicians paint
+                        their pictures on silence.
+                    </p>
+                </div>
+            </section>
+            <!-- con4 -->
+            <section class="con4">
+                <div class="c4_txt">
+                    <h2>다양한 장르의 음악들</h2>
+                    <h2>새로운 경험을 해보세요.</h2>
+                </div>
+
+                <ul class="img_slide">
+                    <!-- <li><img src="img/index/con3_1.png" /></li> -->
+                    <li>
+                        <video
+                            src="video/con4_1.mp4"
+                            alt="video"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                        ></video>
+                    </li>
+                    <li class="c4_logo">
+                        <img
+                            class="c4_logo_img"
+                            src="img/main/logo_amusic.svg"
+                        />
+                        <img class="circle_img" src="img/main/circle_txt.png" />
+                    </li>
+                    <!-- <li><img src="img/index/con3_2.png" /></li> -->
+                    <li>
+                        <video
+                            src="video/con4_3.mp4"
+                            alt="video"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                        ></video>
+                    </li>
+                    <li><img src="img/index/con3_3.png" /></li>
+                    <li><img src="img/index/con3_4.png" /></li>
+                </ul>
+            </section>
+            <!-- con5 -->
+            <section class="con5">
+                <ul>
+                    <li>
+                        <p class="c5_p1">
+                            Music is the<br />
+                            universal Language
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/index/con5.png" />
+                        <div class="c5_txt">
+                            <h2>billboard</h2>
+                            <p class="p2">Music Awards</p>
+                            <p class="p3">Los Angeles</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="con6">
+                <div class="txt1">
+                    <h2>MUSIC</h2>
+                </div>
+                <div class="txt2">
+                    <h2>MUSIC</h2>
+                </div>
+                <div class="txt3">
+                    <h2>LANGUAGE</h2>
+                </div>
+            </section>
+        </div>
+
+        <!-- footer 공통 -->
+        <footer>
+            <img src="img/main/logo_amusic.svg" alt="logo" />
+            <ul class="footer_txt">
+                <li>
+                    <h2>YOUR</h2>
+                </li>
+                <li><h2>MUSIC</h2></li>
+            </ul>
+            <!-- snsicon -->
+            <ul class="snsicon">
+                <li>
+                    <a href="#"
+                        ><img src="img/main/kakako_icon.png" alt="kakao_icon"
+                    /></a>
+                </li>
+                <li>
+                    <a href="#"
+                        ><img
+                            src="img/main/youtube_icon.png"
+                            alt="youtube_icon"
+                    /></a>
+                </li>
+                <li>
+                    <a href="#"
+                        ><img src="img/main/insta_icon.png" alt="insta_icon"
+                    /></a>
+                </li>
+            </ul>
+            <!-- scrollUp -->
+            <div class="scrollUp">
+                <p>Scroll Up</p>
+                <img src="img/main/scroll_up.png" />
+            </div>
+        </footer>
+        <!-- gsap -->
+        <script>
+            $(function () {
+                let img = gsap.utils.toArray(".con4 .img_slide li");
+                gsap.to(img, {
+                    xPercent: -100 * (img.length - 1),
+                    scrollTrigger: {
+                        trigger: ".con4",
+                        pin: true,
+                        scrub: 5,
+                        start: "center center",
+                        end: "200%",
+                        // markers: true,
+                    },
+                });
+            });
+        </script>
+    </body>
 </html>

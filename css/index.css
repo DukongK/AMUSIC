@@ -24,6 +24,7 @@
   nav .menu {
     display: flex;
     gap: 40px;
+ 
   }
 
   .menu li a {
@@ -45,7 +46,7 @@
     height: 35px;
     position: relative;
     cursor: pointer;
-    z-index: 10;
+    z-index:10;
   }
   .hambergur li {
     border-radius: 100%;
@@ -82,42 +83,42 @@
     bottom: 50%;
   }
 
-  /* hamlist */
-  .hamlist {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
+/* hamlist */
+.hamlist{display:none;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  width:100%;
+  height:100vh;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
 
-  .ham_list_ul {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 50px;
-  }
-  .ham_list_ul li {
-    transform: translateY(300px);
-    transition: 1s;
-    opacity: 0;
-  }
-  .ham_list_ul li.on {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  .ham_list_ul li a {
-    font-size: 30px;
-    background-image: linear-gradient(to bottom, #ff426b, #b75fff);
-    background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
+.ham_list_ul{
+  position: absolute;
+  left:50%;
+  top:50%;
+transform: translate(-50%,-50%);
+display:flex;
+gap:50px;
+}
+.ham_list_ul li{
+  transform: translateY(300px);
+transition: 1s;
+opacity: 0;}
+.ham_list_ul li.on{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.ham_list_ul li a{
+  font-size:30px;
+  background-image: linear-gradient(to bottom, #ff426b, #b75fff);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+
 
   /* visual */
   #visual {
@@ -165,6 +166,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    font-family: "Inter", sans-serif;
   }
 
   .v_txt ul {
@@ -236,7 +238,9 @@
     transition: 1s;
     opacity: 0;
     transition-delay: 0.5s;
+  
   }
+ 
 
   .center_txt img.on {
     transform: translate(-50%, -50%) rotate(15deg);
@@ -286,6 +290,7 @@
     margin-top: 150px;
     overflow: hidden;
   }
+  .con1 h2{   font-family: "Inter", sans-serif;}
 
   .con1_bg {
     background-color: #fff;
@@ -454,6 +459,7 @@
 
   .c2_center h2 {
     font-size: 80px;
+ 
   }
   .cof {
     color: #fff;
@@ -549,7 +555,7 @@
 
   .line1 {
     background-color: #6282ff;
-    width: 150%;
+    width: 250%;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -572,7 +578,7 @@
 
   .line2 {
     background-color: #b1299a;
-    width: 150%;
+    width: 250%;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -1067,7 +1073,7 @@
 
   /* hambergur */
   .hambergur {
-    z-index: 10;
+    z-index:10;
     /* background-color: #999; */
     width: 33px;
     height: 33px;
@@ -1109,42 +1115,42 @@
     bottom: 50%;
   }
 
-  /* hamlist */
-  .hamlist {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
 
-  .ham_list_ul {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 50px;
-  }
-  .ham_list_ul li {
-    transform: translateY(300px);
-    transition: 1s;
-    opacity: 0;
-  }
-  .ham_list_ul li.on {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  .ham_list_ul li a {
-    font-size: 30px;
-    background-image: linear-gradient(to bottom, #ff426b, #b75fff);
-    background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
+  /* hamlist */
+.hamlist{display:none;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  width:100%;
+  height:100vh;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+
+.ham_list_ul{
+  position: absolute;
+  left:50%;
+  top:50%;
+transform: translate(-50%,-50%);
+display:flex;
+gap:50px;
+}
+.ham_list_ul li{
+  transform: translateY(300px);
+transition: 1s;
+opacity: 0;}
+.ham_list_ul li.on{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.ham_list_ul li a{
+  font-size:30px;
+  background-image: linear-gradient(to bottom, #ff426b, #b75fff);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
 
   /* visual */
   #visual {
@@ -1234,6 +1240,7 @@ width:100%;
     text-align: center;
     color: #fff;
     position: absolute;
+    font-family: "Inter", sans-serif;
     /* left: 50%;
 top: 50%;
 transform: translate(-50%, -50%); */
@@ -1312,6 +1319,7 @@ transform: translate(-50%, -50%); */
     margin-top: 150px;
     overflow: hidden;
   }
+  .con1 h2{font-family: "Inter", sans-serif;}
 
   .con1_bg {
     background-color: #fff;
@@ -1375,10 +1383,26 @@ transform: translate(-50%, -50%); */
     cursor: default;
     transform: scale(-1);
     transition: 1s;
+    
+  animation: con1img 10s ease infinite;
+  background-size: 400% 400%;
   }
   .img_txt.on {
     transform: scale(1);
   }
+
+  @keyframes con1img {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 
   /* con2 */
   .con2 {
@@ -1556,7 +1580,7 @@ transform: translate(-50%, -50%); */
 
   .line1 {
     background-color: #6282ff;
-    width: 200%;
+    width: 270%;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -1579,7 +1603,7 @@ transform: translate(-50%, -50%); */
 
   .line2 {
     background-color: #b1299a;
-    width: 150%;
+    width: 250%;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -2075,8 +2099,7 @@ writing-mode: vertical-rl;
   }
 
   /* hambergur */
-  .hambergur {
-    z-index: 10;
+  .hambergur {z-index:10;
     /* background-color: #999; */
     width: 30px;
     height: 30px;
@@ -2119,42 +2142,41 @@ writing-mode: vertical-rl;
   }
 
   /* hamlist */
-  .hamlist {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
+.hamlist{display:none;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  width:100%;
+  height:100vh;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
 
-  .ham_list_ul {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
-  }
-  .ham_list_ul li {
-    transform: translateX(300px);
-    transition: 1s;
-    opacity: 0;
-  }
-  .ham_list_ul li.on {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-  .ham_list_ul li a {
-    font-size: 30px;
-    background-image: linear-gradient(to bottom, #ff426b, #b75fff);
-    background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
+.ham_list_ul{
+  position: absolute;
+  left:50%;
+  top:50%;
+transform: translate(-50%,-50%);
+display:flex;
+gap:50px;
+flex-direction: column;
+}
+.ham_list_ul li{
+  transform: translateX(300px);
+transition: 1s;
+opacity: 0;}
+.ham_list_ul li.on{
+  transform: translateX(0px);
+  opacity: 1;
+}
+.ham_list_ul li a{
+  font-size:30px;
+  background-image: linear-gradient(to bottom, #ff426b, #b75fff);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
 
   /* visual */
   #visual {
@@ -2244,7 +2266,7 @@ writing-mode: vertical-rl;
     text-align: center;
     color: #fff;
     position: absolute;
-
+    font-family: "Inter", sans-serif;
     /* left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); */
@@ -2336,6 +2358,10 @@ writing-mode: vertical-rl;
     overflow: hidden;
   }
 
+  .con1 h2{
+    font-family: "Inter", sans-serif;
+  }
+
   .con1_bg {
     background-color: #fff;
     width: 100%;
@@ -2382,10 +2408,30 @@ writing-mode: vertical-rl;
     cursor: default;
     transform: scale(-1);
     transition: 1s;
+    animation: con1img 10s ease infinite;
+    background-size: 400% 400%;
   }
   .img_txt.on {
     transform: scale(1);
   }
+
+
+  @keyframes con1img {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+
+
 
   /* con2 */
   .con2 {
@@ -2951,8 +2997,7 @@ writing-mode: vertical-rl;
 
   .footer_txt {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
     padding: 0px 80px;
   }
   .footer_txt li h2 {
