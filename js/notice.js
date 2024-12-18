@@ -27,13 +27,12 @@ $(function () {
         $("html,body").stop().animate({ scrollTop: button });
     });
 
-
     // hamlist
 
-$(".hambergur").on("click",function(){
-    $(".hamlist").fadeToggle();
-    $(".ham_list_ul li").toggleClass("on");
-  })
+    $(".hambergur").on("click", function () {
+        $(".hamlist").fadeToggle();
+        $(".ham_list_ul li").toggleClass("on");
+    });
 });
 
 // 페이지별 공통 적용------------------------------
@@ -43,43 +42,30 @@ $(function () {
     $("#visual h2:first-child").addClass("on");
     $("#visual h2:nth-child(2)").addClass("on");
     $("#visual h2:nth-child(3)").addClass("on");
+    $("#visual h2:nth-child(4)").addClass("on");
+    $("#visual h2:nth-child(5)").addClass("on");
+    $("#visual h2:nth-child(6)").addClass("on");
+    $("#visual h2:nth-child(7)").addClass("on");
+    $("#visual h2:nth-child(8)").addClass("on");
 });
 
 $(function () {
     $(window).on("scroll", function () {
-        let Visual = $(this).scrollTop();
-        // console.log(Visual);
-        let con1 = $(this).scrollTop();
-        // console.log(con1);
-        let con2 = $(this).scrollTop();
-        // console.log(con2);
-        let con3 = $(this).scrollTop();
-        // console.log(con3);
-        let con4 = $(this).scrollTop();
-        // console.log(con4);
-        let con5 = $(this).scrollTop();
-        // console.log(con5);
-        let footer = $(this).scrollTop();
+        let con1 = $(".con1").offset().top + -400,
+            con2 = $(".con2").offset().top + -500,
+            con3 = $(".con3").offset().top + -500,
+            con4 = $(".con4").offset().top + -380,
+            con5 = $(".con5").offset().top + -400,
+            footer = $("footer").offset().top + -450;
         console.log(footer);
 
-        if (Visual >= 100 && 120 <= Visual) {
-            $("#visual h2:nth-child(4)").addClass("on");
-        }
-        if (Visual >= 400 && 500 <= Visual) {
-            $("#visual h2:nth-child(5)").addClass("on");
-        }
-        if (Visual >= 500 && 600 <= Visual) {
-            $("#visual h2:nth-child(6)").addClass("on");
-            $("#visual h2:nth-child(7)").addClass("on");
-            $("#visual h2:nth-child(8)").addClass("on");
-        }
-        if (con1 >= 1200 && 1300 <= con1) {
+        let scroll = $(this).scrollTop();
+
+        if (scroll >= con1 && scroll < con2) {
             $(".con1 ul li p").addClass("on");
-        }
-        if (con2 >= 2700 && 2800 <= con2) {
+        } else if (scroll >= con2 && scroll < con3) {
             $(".con2 h2").addClass("on");
-        }
-        if (con3 >= 3200 && 3300 <= con3) {
+        } else if (scroll >= con3 && scroll < con4) {
             $(".con3 ul:first-child li:first-child h2").addClass("on");
             $(".con3 ul:first-child li:nth-child(2)").addClass("on");
             $(".con3 ul:first-child li:nth-child(3)").addClass("on");
@@ -89,8 +75,7 @@ $(function () {
             $(".ring_right div:nth-child(2)").addClass("on");
             $(".ring_right div:nth-child(1)").addClass("on");
             $(".ring_right div:nth-child(4)").addClass("on");
-        }
-        if (con4 >= 3900 && 4000 <= con4) {
+        } else if (scroll >= con4 && scroll < con5) {
             $(".ring_left div:nth-child(3)").addClass("on");
             $(".ring_left div:nth-child(2)").addClass("on");
             $(".ring_left div:nth-child(1)").addClass("on");
@@ -109,21 +94,17 @@ $(function () {
                     $(".con4 ul li:nth-child(3) span").text(count);
                 }
             }, 10); // 숫자 속도 조절
-        }
-        if (con5 >= 4700 && 4800 <= con5) {
+        } else if (scroll >= con5 && scroll < footer) {
             $(".con5 ul li:nth-child(2)").addClass("on");
             $(".oph2").addClass("on");
             $(".oph2_2").addClass("on");
-            $(".con5 ul li:first-child").addClass("on")
-            $(".con5 ul li:last-child").addClass("on")
-        }
-        if(footer >= 4900 && 5100 <= footer){
+            $(".con5 ul li:first-child").addClass("on");
+            $(".con5 ul li:last-child").addClass("on");
+        } else {
             $(" footer > img").addClass("on");
             $(" .footer_txt li:first-child h2 ").addClass("on");
             $(" .footer_txt li:last-child h2 ").addClass("on");
             $(".snsicon ").addClass("on");
-
-
         }
     });
 });
